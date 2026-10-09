@@ -1,0 +1,89 @@
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f5f2;
+  color: #1d2b25;
+  line-height: 1.5;
+}
+
+
+header {
+  background-color: #1f6f54;
+  color: #ffffff;
+  padding: 16px 24px;
+}
+
+header h1 { margin: 0 0 8px; font-size: 1.3rem; }
+header p { margin: 0 0 12px; font-size: 0.9rem; }
+
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { display: block; padding: 8px 16px; color: #ffffff; text-decoration: none; border: 1px solid #ffffff; }
+nav a:hover { background-color: #17573f; }
+nav a.activo { background-color: #ffffff; color: #1f6f54; }
+
+
+main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+
+section {
+  background-color: #ffffff;
+  border: 1px solid #d6ddd8;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 { margin-top: 0; font-size: 1.2rem; }
+
+
+table { width: 100%; border-collapse: collapse; }
+caption { text-align: left; font-weight: bold; padding-bottom: 8px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #d6ddd8; }
+th { background-color: #dcefe6; }
+
+.aprobado { color: #1f6f54; font-weight: bold; }
+.reprobado { color: #b3392f; font-weight: bold; }
+
+
+.chip { display: inline-block; padding: 2px 8px; margin: 2px 0; font-size: 0.85rem; }
+.presente { background-color: #dcefe6; color: #1f6f54; }
+.ausente { background-color: #f8e0dd; color: #b3392f; }
+.excusa { background-color: #f7ecd0; color: #8a6410; }
+
+
+form label { display: block; margin-bottom: 4px; font-size: 0.9rem; color: #5d6b64; }
+form input, form select { font: inherit; padding: 8px; border: 1px solid #b9c3bd; background-color: #ffffff; }
+fieldset { border: 1px solid #d6ddd8; margin: 0 0 16px; padding: 16px; }
+legend { font-weight: bold; padding: 0 6px; }
+.campo { margin-bottom: 14px; }
+.fila { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 16px; }
+
+td input[type="number"] { width: 80px; }
+
+button {
+  font: inherit;
+  padding: 10px 18px;
+  border: 1px solid #1f6f54;
+  background-color: #1f6f54;
+  color: #ffffff;
+  cursor: pointer;
+}
+button:hover { background-color: #17573f; }
+button.secundario { background-color: #ffffff; color: #1f6f54; }
+button.secundario:hover { background-color: #dcefe6; }
+
+
+#login { max-width: 420px; margin: 60px auto; }
+#login input { width: 100%; }
+#login .botones { display: flex; flex-direction: column; gap: 8px; }
+
+
+
+footer { text-align: center; padding: 16px; font-size: 0.85rem; color: #5d6b64; }
+
+
+@media (max-width: 600px) {
+  table { font-size: 0.85rem; }
+  th, td { padding: 8px 4px; }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis notas - Portal académico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Portal académico</h1>
+    <p>Estudiante: Laura Gómez - Grado 11</p>
+    <nav aria-label="Menú del estudiante">
+      <ul>
+        <li><a href="estudiante-notas.html" class="activo">Mis notas</a></li>
+        <li><a href="estudiante-asistencia.html">Mi asistencia</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Mis notas</h2>
+      <table>
+        <caption>Periodo 3 - Escala de 0.0 a 5.0</caption>
+        <thead>
+          <tr><th>Materia</th><th>Nota 1</th><th>Nota 2</th><th>Nota 3</th><th>Promedio</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Matemáticas</td><td>4.5</td><td>4.0</td><td>4.8</td><td class="aprobado">4.4</td></tr>
+          <tr><td>Programación</td><td>5.0</td><td>4.7</td><td>4.9</td><td class="aprobado">4.9</td></tr>
+          <tr><td>Física</td><td>2.5</td><td>2.8</td><td>3.1</td><td class="reprobado">2.8</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer><p>Portal académico - MVP</p></footer>
+</body>
+</html>

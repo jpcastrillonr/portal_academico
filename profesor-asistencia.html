@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrar asistencia - Portal académico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Portal académico</h1>
+    <p>Profesor: Andrés Martínez</p>
+    <nav aria-label="Menú del profesor">
+      <ul>
+        <li><a href="profesor-asistencia.html" class="activo">Asistencia</a></li>
+        <li><a href="profesor-notas.html">Notas</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Registrar asistencia</h2>
+      <form>
+        <div class="fila">
+          <div>
+            <label for="materia">Materia</label>
+            <select id="materia">
+              <option>Matemáticas</option>
+              <option>Programación</option>
+              <option>Física</option>
+            </select>
+          </div>
+          <div>
+            <label for="fecha">Fecha de la clase</label>
+            <input type="date" id="fecha" value="2026-10-05">
+          </div>
+        </div>
+
+        <table>
+          <caption>Grado 11 - Lista de estudiantes</caption>
+          <thead>
+            <tr><th>Estudiante</th><th>Estado</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label for="a1">Laura Gómez</label></td>
+              <td><select id="a1"><option selected>Presente</option><option>Ausente</option><option>Excusa</option></select></td>
+            </tr>
+            <tr>
+              <td><label for="a2">Carlos Pérez</label></td>
+              <td><select id="a2"><option>Presente</option><option selected>Ausente</option><option>Excusa</option></select></td>
+            </tr>
+            <tr>
+              <td><label for="a3">Ana Torres</label></td>
+              <td><select id="a3"><option selected>Presente</option><option>Ausente</option><option>Excusa</option></select></td>
+            </tr>
+            <tr>
+              <td><label for="a4">Mateo Ruiz</label></td>
+              <td><select id="a4"><option>Presente</option><option>Ausente</option><option selected>Excusa</option></select></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><button type="submit">Guardar asistencia</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>Portal académico - MVP</p></footer>
+</body>
+</html>

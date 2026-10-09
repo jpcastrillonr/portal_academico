@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrar notas - Portal académico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Portal académico</h1>
+    <p>Profesor: Andrés Martínez</p>
+    <nav aria-label="Menú del profesor">
+      <ul>
+        <li><a href="profesor-asistencia.html">Asistencia</a></li>
+        <li><a href="profesor-notas.html" class="activo">Notas</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Registrar notas</h2>
+      <form>
+        <div class="fila">
+          <div>
+            <label for="materia">Materia</label>
+            <select id="materia">
+              <option>Matemáticas</option>
+              <option>Programación</option>
+              <option>Física</option>
+            </select>
+          </div>
+          <div>
+            <label for="periodo">Periodo</label>
+            <select id="periodo">
+              <option>Periodo 1</option>
+              <option>Periodo 2</option>
+              <option selected>Periodo 3</option>
+              <option>Periodo 4</option>
+            </select>
+          </div>
+        </div>
+
+        <table>
+          <caption>Grado 11 - Notas de 0.0 a 5.0</caption>
+          <thead>
+            <tr><th>Estudiante</th><th>Nota 1</th><th>Nota 2</th><th>Nota 3</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Laura Gómez</td>
+              <td><input type="number" min="0" max="5" step="0.1" value="4.5" aria-label="Nota 1 de Laura Gómez"></td>
+              <td><input type="number" min="0" max="5" step="0.1" value="4.0" aria-label="Nota 2 de Laura Gómez"></td>
+              <td><input type="number" min="0" max="5" step="0.1" value="4.8" aria-label="Nota 3 de Laura Gómez"></td>
+            </tr>
+            <tr>
+              <td>Carlos Pérez</td>
+              <td><input type="number" min="0" max="5" step="0.1" value="3.0" aria-label="Nota 1 de Carlos Pérez"></td>
+              <td><input type="number" min="0" max="5" step="0.1" value="2.8" aria-label="Nota 2 de Carlos Pérez"></td>
+              <td><input type="number" min="0" max="5" step="0.1" value="3.5" aria-label="Nota 3 de Carlos Pérez"></td>
+            </tr>
+            <tr>
+              <td>Ana Torres</td>
+              <td><input type="number" min="0" max="5" step="0.1" value="4.2" aria-label="Nota 1 de Ana Torres"></td>
+              <td><input type="number" min="0" max="5" step="0.1" value="4.6" aria-label="Nota 2 de Ana Torres"></td>
+              <td><input type="number" min="0" max="5" step="0.1" value="4.4" aria-label="Nota 3 de Ana Torres"></td>
+            </tr>
+            <tr>
+              <td>Mateo Ruiz</td>
+              <td><input type="number" min="0" max="5" step="0.1" value="2.5" aria-label="Nota 1 de Mateo Ruiz"></td>
+              <td><input type="number" min="0" max="5" step="0.1" value="3.1" aria-label="Nota 2 de Mateo Ruiz"></td>
+              <td><input type="number" min="0" max="5" step="0.1" value="2.9" aria-label="Nota 3 de Mateo Ruiz"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p><button type="submit">Guardar notas</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>Portal académico - MVP</p></footer>
+</body>
+</html>

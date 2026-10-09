@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi asistencia - Portal académico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Portal académico</h1>
+    <p>Estudiante: Laura Gómez - Grado 11</p>
+    <nav aria-label="Menú del estudiante">
+      <ul>
+        <li><a href="estudiante-notas.html">Mis notas</a></li>
+        <li><a href="estudiante-asistencia.html" class="activo">Mi asistencia</a></li>
+        <li><a href="index.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Mi asistencia</h2>
+      <table>
+        <caption>Últimas cuatro clases de cada materia</caption>
+        <thead>
+          <tr><th>Materia</th><th>14 sep</th><th>21 sep</th><th>28 sep</th><th>5 oct</th><th>Asistencia</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Matemáticas</td>
+            <td><span class="chip presente">Presente</span></td>
+            <td><span class="chip presente">Presente</span></td>
+            <td><span class="chip excusa">Excusa</span></td>
+            <td><span class="chip presente">Presente</span></td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>Programación</td>
+            <td><span class="chip presente">Presente</span></td>
+            <td><span class="chip presente">Presente</span></td>
+            <td><span class="chip presente">Presente</span></td>
+            <td><span class="chip presente">Presente</span></td>
+            <td>100%</td>
+          </tr>
+          <tr>
+            <td>Física</td>
+            <td><span class="chip ausente">Ausente</span></td>
+            <td><span class="chip presente">Presente</span></td>
+            <td><span class="chip ausente">Ausente</span></td>
+            <td><span class="chip presente">Presente</span></td>
+            <td>50%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer><p>Portal académico - MVP</p></footer>
+</body>
+</html>
